@@ -1,4 +1,4 @@
-# Threat Hunting with Osquery (Windows)
+# Osquery Threat Hunting Basics (Windows)
 
 ## Logged Users 
 ### Question
@@ -34,6 +34,15 @@ Find the top 10 largest processes by resident memory size.
 ### Query
 ```sql
 select pid, name, uid, resident_size from processes order by resident_size desc limit 10;
+```
+
+## Running Process 
+### Question
+Find all the running processes.
+
+### Query
+```sql
+select * from processes;
 ```
 
 ---
