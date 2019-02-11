@@ -47,6 +47,27 @@ select * from processes;
 
 ---
 
+# Osquery Advanced Threat Hunting (Windows)
+
+## Process Mapping
+### Question
+Map all processes to listing ports they currently have open.
+
+### Query
+```sql
+SELECT DISTINCT process.name, listening.port, listening.address, process.pid FROM processes AS process JOIN listening_ports AS listening ON process.pid = listening.pid;
+```
+
+## Process Mapping
+### Question
+Find all processes with no EXE backing it
+
+### Query
+```sql
+SELECT name, path, pid FROM processes WHERE on_disk = 0;
+```
+---
+
 # Uncovering Persistence with Osquery (Windows)
 
 ## Create Account - T1136
