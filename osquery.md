@@ -45,6 +45,15 @@ Find all the running processes.
 select * from processes;
 ```
 
+## Find Running Processes
+### Question
+Find all the running svchost.exe processes.
+
+### Query
+```sql
+SELECT * FROM processes WHERE name = "svchost.exe" 
+```
+
 ---
 
 # Osquery Advanced Threat Hunting (Windows)
