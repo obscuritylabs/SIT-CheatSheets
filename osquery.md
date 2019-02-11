@@ -36,6 +36,8 @@ Find the top 10 largest processes by resident memory size.
 select pid, name, uid, resident_size from processes order by resident_size desc limit 10;
 ```
 
+---
+
 # Uncovering Persistence with Osquery (Windows)
 
 ## Create Account - T1136
