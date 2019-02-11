@@ -4,7 +4,7 @@
 ### Question
 Query to find who are the logged in users in the system 
 
-### Query?
+### Query:
 ```sql
 select * from logged_in_users ;
 ```
@@ -13,7 +13,7 @@ select * from logged_in_users ;
 ### Question
 Previous logins
 
-### Query?
+### Query:
 ```sql
 select * from last ;
 ```
@@ -22,7 +22,7 @@ select * from last ;
 ### Question
 Find all the listening ports to check if there is any backdoor to the system. If there is any open port that you have not configured then you might need to examine the process that opened this port.
 
-### Query?
+### Query:
 ```sql
 select * from listening_ports;
 ```
@@ -31,7 +31,7 @@ select * from listening_ports;
 ### Question
 Find the top 10 largest processes by resident memory size.
 
-### Query?
+### Query
 ```sql
 select pid, name, uid, resident_size from processes order by resident_size desc limit 10;
 ```
