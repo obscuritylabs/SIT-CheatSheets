@@ -1,3 +1,41 @@
+# Threat Hunting with Osquery (Windows)
+
+## Logged Users 
+### Question
+Query to find who are the logged in users in the system 
+
+### Query?
+```sql
+select * from logged_in_users ;
+```
+
+## Previous Logged Users 
+### Question
+Previous logins
+
+### Query?
+```sql
+select * from last ;
+```
+
+## Previous Logged Users 
+### Question
+Find all the listening ports to check if there is any backdoor to the system. If there is any open port that you have not configured then you might need to examine the process that opened this port.
+
+### Query?
+```sql
+select * from listening_ports;
+```
+
+## Process Image 
+### Question
+Find the top 10 largest processes by resident memory size.
+
+### Query?
+```sql
+select pid, name, uid, resident_size from processes order by resident_size desc limit 10;
+```
+
 # Uncovering Persistence with Osquery (Windows)
 
 ## Create Account - T1136
