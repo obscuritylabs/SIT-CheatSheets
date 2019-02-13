@@ -1,3 +1,4 @@
+https://gist.github.com/killswitch-GUI/9fa7d1dae693787cb2876f2a2f17e46e
 
 [*] Session 1 opened (RESEARCH\kroberts) (172.16.11.106:8888 <- 172.16.0.7:39512)
 >> ps
