@@ -9,7 +9,7 @@
 |  ELK2 |  Elastic |  https://2085d267330a4c88bbc642c1fab436ea.us-east-1.aws.found.io:9243 | soc-analyst-# (# is student id) |  SITR0cks! |
 |  ELK2 |  Kibana |  https://3741e6cf59de44de830ac81009de8432.us-east-1.aws.found.io:9243/app/kibana | soc-analyst-# (# is student id) |  SITR0cks! |
 |  Microsoft |  ATA |  https://172.16.40.203 | Administrator  |  SITR0cks! |
-|  HiveProject |  TheHive |  http://172.16.40.204:9000 | soc-analyst-#  |  SITR0cks! |
+|  HiveProject |  TheHive |  http://172.16.40.204:9000 | soc-analyst-# (# is student id) | SITR0cks! |
 
 # SIT Analyst Workstations
 |  Resource | Student |  IP | User  | Password  |
