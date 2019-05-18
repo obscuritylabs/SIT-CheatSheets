@@ -8,6 +8,8 @@
 |  Kolide |  Fleet |  https://172.16.40.201:8080 | merck-mon |  SITR0cks! |
 |  ELK |  Elastic |  http://172.16.40.202:9200/ | N/A  |  N/A |
 |  ELK |  Kibana |  http://172.16.40.202:5601 | N/A  |  N/A |
+|  ELK2 |  Elastic |  https://2085d267330a4c88bbc642c1fab436ea.us-east-1.aws.found.io:9243 | soc-analyst-#  |  SITR0cks! |
+|  ELK2 |  Kibana |  https://3741e6cf59de44de830ac81009de8432.us-east-1.aws.found.io:9243/app/kibana | soc-analyst-#  |  SITR0cks! |
 |  Microsoft |  ATA |  https://172.16.40.203 | Administrator  |  SITR0cks! |
 |  HiveProject |  TheHive |  http://172.16.40.204:9000 | soc-analyst-#  |  SITR0cks! |
 |  HiveProject |  Cortex |  http://172.16.40.204:9001 | killswitch-gui |  SITR0cks! |
