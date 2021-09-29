@@ -1,0 +1,177 @@
+The Services subkeys under the following registry path contain parameters
+for the device drivers, file system drivers, and Win32 service drivers:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+
+The name of each Services subkey is the name of the service, which is also
+the root of the name of the file from which the service is loaded. For
+example, for the serial mouse, the service name and Services subkey name is
+Sermouse. The file from which this is loaded is:
+
+SystemRoot\SYSTEM32\DRIVERS\SERMOUSE.SYS.
+
+All service names are defined under:
+
+     HKEY_LOCAL_MACHINE\SOFTWARE.
+
+The names of the Windows NT built-in network services such as the Alerter
+and Browser services are defined under the Microsoft\Windows
+NT\CurrentVersion subkey in the Software area of the Registry.
+
+Each Services key can have additional subkeys. Many services have a Linkage
+subkey, which provides data for binding network components, as described in
+"Linkage Subkey Entries for Network Components," in the article "Network
+Adapter Cards Entries, PART 1." Many services also have a Parameters subkey
+that contains entries defined by the service with values for configuring
+the specific service.
+
+Values for Parameters subkeys and other service-specific entries are
+described in these articles:
+
+Network Adapter Cards Entries
+Device Drivers Entries
+Network Services Entries
+
+The following standard value entries appear for each Services subkey:
+
+ErrorControl     REG_DWORD     Error constant
+Specifies the level of error control for the service as follows:
+
+Error Control  Meaning
+Level
+
+0x3 (Critical) Fail the attempted system startup.
+               If the startup is not using the
+               LastKnownGood control set, switch to
+               LastKnownGood. If the startup attempt
+               is using LastKnownGood, run a bug-check
+               routine.
+
+0x2 (Severe)   If the startup is not using the
+               LastKnownGood control set, switch to
+               LastKnownGood. If the startup attempt
+               is using LastKnownGood, continue on
+               in case of error.
+
+0x1 (Normal)   If the driver fails to load or initialize,
+               startup should proceed, but display a
+               warning.
+
+0x0 (Ignore)   If the driver fails to load or initialize,
+               start up proceeds. No warning is displayed.
+
+Group     REG_SZ     Group name
+Specifies the name of the group of which the particular service is a
+member.
+Default: (null)
+
+DependOnGroup     REG_MULTI_SZ     Group name
+Specifies zero or more group names. If one or more groups is listed, at
+least one service from the named group must be loaded before this service
+is loaded.
+Default: (empty)
+
+DependOnService     REG_MULTI_SZ     Service name
+Specifies zero or more Services subkey names. If a service is listed here,
+that named service must be loaded before this service is loaded.
+Default: (empty)
+
+ImagePath     REG_DWORD     Path and filename
+Specifies a path name. For adapters, this value is ignored.
+Default: For a driver:
+
+     systemroot\SYSTEM32\DRIVERS\driverName.SYS
+
+For a service:
+
+     systemroot\SYSTEM32\serviceName.EXE
+
+(where driverName or serviceName is the same as the related Services subkey
+name)
+
+ObjectName     REG_DWORD     Object name
+Specifies an object name. If Type specifies a WIN32 Service, this name is
+the account name that the service will use to log on when the service runs.
+If Type specifies a Kernel driver or file system driver, this name is the
+Windows NT driver object name that the I/O Manager uses to load the device
+driver.
+Default: subkeyName
+
+Start     REG_DWORD     Start constant
+Specifies the starting values for the service as follows:
+
+START TYPE     LOADER     MEANING
+
+0x0            Kernel     Represents a part of the
+(Boot)                    driver stack for the boot
+                          (startup) volume and must
+                          therefore be loaded by the
+                          Boot Loader.
+
+0x1            I/O        Represents a driver to be loaded
+(System)       subsystem  at Kernel initialization.
+
+0x2            Service    To be loaded or started
+(Auto load)    Control    automatically for all startups,
+               Manager    regardless of service type.
+
+0x3            Service    Available, regardless of type,
+(Load on       Control    but will not be started until
+demand)        Manager    the user starts it (for example,
+                          by using the Devices icon in
+                          Control Panel).
+
+0x4            Service    NOT TO BE STARTED UNDER ANY
+(disabled)     Control    CONDITIONS.
+               Manager
+
+The Start value is ignored for adapters. If Type is a Win32 Service value
+(as described below), the Start value must specify an Auto, Demand, or
+Disabled value.
+
+Tag     REG_DWORD
+Specifies a load order within a given group. The value of Tag specifies a
+number that is unique within the group of which the service is a member.
+The related GroupName entry under the Control\GroupOrderList subkey
+specifies a list of tags, in load order.
+
+For example, the following services that are members of the Primary Disk
+group could have these values: Tag=4 for the Abiosdsk subkey, Tag=2 for
+Atdisk, Tag=1 for Cpqarray, and Tag=3 for Floppy. The value for Primary
+Disk under the GroupOrderList subkey will use these Tag values to specify
+the defined order for loading these services. As another example, each SCSI
+miniport service has a unique Tag value that is used as an identifier in
+the SCSI miniport value under the GroupOrderList subkey to define which
+SCSI adapter to load first.
+
+Type     REG_DWORD     Type constant
+
+Specifies the type of service as follows:
+
+Service Type   Description
+
+0x1            A Kernel device driver.
+
+0x2            File system driver, which is also
+               a Kernel device driver.
+
+0x4            A set of arguments for an adapter.
+
+0x10           A Win32 program that can be started
+               by the Service Controller and that
+               obeys the service control protocol.
+               This type of Win32 service runs in
+               a process by itself.
+
+0x20           A Win32 service that can share a process
+               with other Win32 services.
+
+
+For example, when you start Windows NT, the Boot Loader scans the Registry
+for drivers with a Start value of 0 (which indicates that these drivers
+should be loaded but not initialized before the Kernel) and a Type value of
+0x1 (which indicates a Kernel device driver such as a hard disk or other
+low-level hardware device driver). The drivers are then loaded into memory
+in the order specified as the List value in
+CurrentControlSet\Control\ServiceGroupOrder.
+				
