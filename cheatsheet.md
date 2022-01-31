@@ -14,19 +14,19 @@
 # SIT Analyst Workstations
 |  Resource | Student |  IP | User  | Password  |
 |---|---|---|---|---|
-|  Flare Analyst Workstation | Student 1 | 172.16.40.101 | soc-analyst-# |  SITR0cks! |
-|  Flare Analyst Workstation | Student 2 | 172.16.40.102 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 3 | 172.16.40.103 | soc-analyst-# |  SITR0cks! |
-|  Flare Analyst Workstation | Student 4 | 172.16.40.104 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 5 | 172.16.40.105 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 6 | 172.16.40.106 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 7 | 172.16.40.107 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 8 | 172.16.40.108 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 9 | 172.16.40.109 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 10 | 172.16.40.110 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 11 | 172.16.40.111 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 12 | 172.16.40.112 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 13 | 172.16.40.113 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 14 | 172.16.40.114 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 15 | 172.16.40.115 | soc-analyst-#  |  SITR0cks! |
-|  Flare Analyst Workstation | Student 16 | 172.16.40.116 | soc-analyst-#  |  SITR0cks! |
+|  Flare Analyst Workstation | Student 1 | 172.16.40.101 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 2 | 172.16.40.102 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 3 | 172.16.40.103 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 4 | 172.16.40.104 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 5 | 172.16.40.105 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 6 | 172.16.40.106 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 7 | 172.16.40.107 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 8 | 172.16.40.108 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 9 | 172.16.40.109 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 10 | 172.16.40.110 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 11 | 172.16.40.111 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 12 | 172.16.40.112 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 13 | 172.16.40.113 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 14 | 172.16.40.114 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 15 | 172.16.40.115 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 16 | 172.16.40.116 | ol |  SITR0cks! |
