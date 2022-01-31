@@ -14,19 +14,20 @@
 # SIT Analyst Workstations
 |  Resource | Student |  IP | User  | Password  |
 |---|---|---|---|---|
-|  Flare Analyst Workstation | Student 1 | 172.16.40.101 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 2 | 172.16.40.102 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 3 | 172.16.40.103 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 4 | 172.16.40.104 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 5 | 172.16.40.105 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 6 | 172.16.40.106 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 7 | 172.16.40.107 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 8 | 172.16.40.108 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 9 | 172.16.40.109 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 10 | 172.16.40.110 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 11 | 172.16.40.111 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 12 | 172.16.40.112 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 13 | 172.16.40.113 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 14 | 172.16.40.114 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 15 | 172.16.40.115 | ol |  SITR0cks! |
-|  Flare Analyst Workstation | Student 16 | 172.16.40.116 | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 1 | shield-ws1.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 2 | shield-ws2.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 3 | shield-ws3.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 4 | shield-ws4.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 5 | shield-ws5.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 6 | shield-ws6.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 7 | shield-ws7.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 8 | shield-ws8.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 9 | shield-ws9.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 10 | shield-ws10.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 11 | shield-ws11.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 12 | shield-ws12.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 13 | shield-ws13.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 14 | shield-ws14.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 15 | shield-ws15.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 16 | shield-ws16.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
+|  Flare Analyst Workstation | Student 17 | shield-ws16.bc-001.sit.obscuritylabs.com | ol |  SITR0cks! |
